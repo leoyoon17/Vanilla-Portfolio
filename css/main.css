@@ -1,0 +1,57 @@
+body {
+    background-color: #FBFAFB;
+    margin: 0em;
+    font-family: 'Quicksand', helvetica, arial, sans-serif;
+}
+
+img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+h3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #426769;
+    height: 5em;
+    font-size: 1em;
+}
+
+.navbar-container {
+    margin: auto;
+    width: 80%;
+    /* padding: 10px; */
+}
+
+.navbar-left {
+    color: #FBFAFB;
+    float: left;
+    height: 5em;
+
+}
+
+.navbar-right {
+    float: right;
+    color: #FBFAFB;
+    height: 3em;
+}
+
+.nav-list a {
+    font-size: 1em;
+    margin: 1em;
+    display: inline-block;
+}
+
+.navbar-brand {
+    display: inline-block;
+    vertical-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-list { display: none;}
+    
+}
