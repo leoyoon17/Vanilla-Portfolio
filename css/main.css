@@ -1,8 +1,10 @@
-body {
-    background-color: #FBFAFB;
-    margin: 0em;
+body{
     font-family: 'Quicksand', helvetica, arial, sans-serif;
+    /* background-color: #FBFAFB; */
+    margin: 0em;
+    height: 100%
 }
+
 
 img {
     max-width: 30%;
@@ -15,13 +17,15 @@ h3 {
     justify-content: center;
 }
 
+
 .navbar {
     background-color: #426769;
     height: 5em;
     font-size: 1em;
+    z-index: 1;
 }
 
-.navbar-container {
+.container {
     margin: auto;
     width: 80%;
     /* padding: 10px; */
@@ -51,7 +55,37 @@ h3 {
     vertical-align: center;
 }
 
+/* TODO: on decreased screen-size, make Hamburger Appear */
 @media screen and (max-width: 700px) {
     .nav-list { display: none;}
     
+}
+
+/* TODO: Card */
+.card {
+    font-family: 'Georgia', serif;
+
+    color: #444;
+    background-color: #EBF3FF ;
+    border-radius: 5px;
+    max-width: 100%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 34px;
+    position: relative;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card h1 {
+    
+    font-size: 3em;
+}
+
+.card h2 {
+    font-size: 2em;
+}
+
+.card h3 { 
+    font-size: 1.5em;
 }
