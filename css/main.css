@@ -42,6 +42,7 @@ h3 {
     float: right;
     color: #FBFAFB;
     height: 3em;
+    font-weight: normal;
 }
 
 .nav-list a {
@@ -55,6 +56,7 @@ h3 {
     vertical-align: center;
 }
 
+
 /* TODO: on decreased screen-size, make Hamburger Appear */
 @media screen and (max-width: 700px) {
     .nav-list { display: none;}
@@ -64,28 +66,34 @@ h3 {
 /* TODO: Card */
 .card {
     font-family: 'Georgia', serif;
-
     color: #444;
     background-color: #EBF3FF ;
     border-radius: 5px;
+    height: 100%;
     max-width: 100%;
+    max-height: 100%;
     text-align: center;
-    margin: 1em auto;
+    margin: 6em auto;
     padding: 34px;
     position: relative;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    overflow: hidden
 }
 
 .card h1 {
-    
-    font-size: 3em;
+    font-size: 6.5vw;
 }
 
 .card h2 {
-    font-size: 2em;
+    font-size: 4vw;
 }
 
 .card h3 { 
-    font-size: 1.5em;
+    font-size: 3vw;
+}
+
+#github-logo {
+    max-width: 15%;
+    max-height: 15%;
+    filter: invert(26%) sepia(0%) saturate(1%) hue-rotate(151deg) brightness(99%) contrast(98%);
 }
