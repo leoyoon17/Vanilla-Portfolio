@@ -7,8 +7,8 @@ body{
 
 
 img {
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h3 {
@@ -35,7 +35,8 @@ h3 {
     color: #FBFAFB;
     float: left;
     height: 5em;
-
+    vertical-align: center;
+    /* min-width: 5em; */
 }
 
 .navbar-right {
@@ -54,20 +55,15 @@ h3 {
 .navbar-brand {
     display: inline-block;
     vertical-align: center;
+    max-width: 5em;
 }
 
-
-/* TODO: on decreased screen-size, make Hamburger Appear */
-@media screen and (max-width: 700px) {
-    .nav-list { display: none;}
-    
-}
 
 /* TODO: Card */
 .card {
     font-family: 'Georgia', serif;
     color: #444;
-    background-color: #EBF3FF ;
+    background-color: #EBF3FF;
     border-radius: 5px;
     height: 100%;
     max-width: 100%;
@@ -96,4 +92,42 @@ h3 {
     max-width: 15%;
     max-height: 15%;
     filter: invert(26%) sepia(0%) saturate(1%) hue-rotate(151deg) brightness(99%) contrast(98%);
+}
+
+/* TODO: on decreased screen-size, make Hamburger Appear */
+@media screen and (max-width: 700px) {
+    .nav-list a { display: none;}
+    .nav-list .menu-container {
+        display: inline-block;
+    }   
+}
+
+/* TODO: Animated Hamburger Menu */
+
+.menu-container {
+    display: none;
+    height: 50%;
+    vertical-align: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #FBFAFB;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px);
+transform: rotate(45deg) translate(-8px, -8px);
 }
