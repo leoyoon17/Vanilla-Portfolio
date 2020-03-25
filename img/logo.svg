@@ -3,15 +3,14 @@
 
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
-  <g display="none" id="canvasGrid">
-   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_1"/>
+  <rect x="-1" y="-1" width="252" height="252" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <rect id="svg_7" height="186.999994" width="186.777764" y="31.78265" x="32.611109" stroke-width="5" fill="none" stroke="#fbfafb"/>
-  <ellipse ry="89" rx="89" id="svg_2" cy="125.282652" cx="125.999991" stroke-width="10" stroke="#fbfafb" fill="none"/>
-  <path stroke="#fbfafb" id="svg_6" d="m60.90093,182.89198l65.09906,-115.21866l65.09906,115.21866l-130.19812,0z" stroke-width="35" fill="none"/>
+  <ellipse fill="none" stroke="#fbfafb" stroke-width="10" cx="125.999991" cy="125.282652" id="svg_2" rx="89" ry="89"/>
+  <path fill="none" stroke-width="35" d="m60.90093,182.89198l65.09906,-115.21866l65.09906,115.21866l-130.19812,0z" id="svg_6" stroke="#fbfafb"/>
  </g>
 </svg>

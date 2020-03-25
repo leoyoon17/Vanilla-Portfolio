@@ -102,7 +102,11 @@ h3 {
     }   
 }
 
-/* TODO: Animated Hamburger Menu */
+@media screen and (min-width: 700px) {
+    #myDropdown {display: none;}
+}
+
+
 
 .menu-container {
     display: none;
@@ -118,6 +122,7 @@ h3 {
     background-color: #FBFAFB;
     margin: 6px 0;
     transition: 0.4s;
+    pointer-events: none;
 }
 
 .change .bar1 {
@@ -130,4 +135,39 @@ h3 {
 .change .bar3 {
 -webkit-transform: rotate(45deg) translate(-8px, -8px);
 transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Dropdown Menu (Responsive) */
+.dropdown {
+    float: right;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.dropdown-content {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 17px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show { 
+    display : block;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
