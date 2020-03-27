@@ -88,16 +88,66 @@ h3 {
     overflow: hidden
 }
 
+/* Fade-in-up Animation
+    Based on: https://codepen.io/themechills/pen/dMamgG */
+
+@keyframes fadeIn {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+
+}
+
+.animatedFadeIn {
+    opacity: 0;
+
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
 .card h1 {
-    font-size: 6.5vw;
+    font-size: 6vw;
 }
 
 .card h2 {
     font-size: 4vw;
+    margin: 1vw;
 }
 
 .card h3 { 
     font-size: 3vw;
+}
+
+.card p {
+    font-size: 1.6vw;
+    text-align: center;
 }
 
 #github-logo {
